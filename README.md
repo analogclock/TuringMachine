@@ -7,8 +7,7 @@ VERSION or DATE: 14 May 2019
 
 HOW TO START THIS PROJECT: 
 In the terminal, navigate to the folder containing this project. 
-The text file with the machine description should be in this folder. Else, you can provide the file’s pathname as the file input
-Run as python <filename>.py <file>.txt <input string>. For example:
+The text file with the machine description should be in this folder. Else, you can provide the file’s pathname as the file input. Run as python <filename>.py <file>.txt <input string>. For example:
 python proj3.py 0n1n.txt 000111
   
 AUTHORS: Hoffmann, Greer; Marbach, Alice
