@@ -2,10 +2,9 @@
 # Copyright 2009-2017 BHG http://bw.org/
 # Greer Hoffmann & Alice Marbach
 
-import array
-
-# Reads arguments from command line. The first arg is the text file of the turing machine,
-# the second is the string to test.
+# Reads arguments from command line.
+# The first arg is the text file of the turing machine,
+# the second is the input string.
 import sys
 txt = open(sys.argv[1]) # txt file to read from
 inputStr = sys.argv[2]  # input string
