@@ -16,5 +16,4 @@ USER INSTRUCTIONS:
 Give an input using valid tape symbols, but giving an invalid symbol will cause it to reject.
 
 KNOWN ISSUES:
-Due to indexing challenges, the machine always accepts the empty string (“” or ‘’), even if the L(M) does not have a rule for that
-Halts on all inputs
+Due to indexing challenges, the machine always accepts the empty string (“” or ‘’), even if the L(M) does not have a rule for that. It also Halts on all inputs
