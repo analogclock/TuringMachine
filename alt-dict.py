@@ -54,11 +54,14 @@ txt.close() # close text file after running
 # RUNTM runs the TM.
 # Takes the array representation of the input str, the dictionart
 def runTM(inputArr, linesDict, accStates):
+    if (inputStr == "" or inputStr == ''):
+        print('Accept')
+        return
     length = len(accStates)
     readInputHelper(inputArr, linesDict, 0, 0, accStates, length)
 
 # Helper function for RUNTM
-# Also takes state, pos, and accStatesLen, which are constants so shouldn't be recalculated at every loop
+# Takes state, pos, and accStatesLen, which are constants so shouldn't be recalculated at every loop
 def readInputHelper(inputArr, linesDict, state, pos, accStates, accStatesLen):
     b = 0 
     for b in range(accStatesLen): 
