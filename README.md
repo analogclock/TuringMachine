@@ -19,4 +19,4 @@ To represent a blank space, use '_'.
 KNOWN ISSUES:
 Due to indexing challenges, the machine always accepts the empty string (“” or ‘’), even if the L(M) does not have a rule for that. It also halts on all inputs
 
-:)
+N.B.: There are two implementations of the same program (proj3.py, alt-dict.py). They do the exact same thing and have the same known issues. The only difference is that I use a dictionary in alt-dict.py, instead of a list of lists in proj3.py. I'm keeping proj3.py here because that is the one I submitted on time. Later I want to delete it because I don't want people to see a unnecessary stupid loop in a recursive call.
