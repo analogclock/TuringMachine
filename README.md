@@ -18,3 +18,5 @@ To represent a blank space, use '_'.
 
 KNOWN ISSUES:
 Due to indexing challenges, the machine always accepts the empty string (“” or ‘’), even if the L(M) does not have a rule for that. It also halts on all inputs
+
+:)
