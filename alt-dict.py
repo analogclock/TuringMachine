@@ -16,12 +16,12 @@ inputStrArr = list(inputStr)
 
 # Uses readline() to read the first line containing # of states
 # cast to int to create an int array from 0 to (num of states)-1 inclusive
-numStates= int(txt.readline())
+numStates = int(txt.readline())
 statesArr = [] 
 k = 0
 while (k<numStates):
     statesArr.insert(k,k)
-    k+=1
+    k += 1
 print('States: {}'.format(statesArr))
 # print(statesArr)
 
@@ -38,7 +38,7 @@ print("Accepting States: {}".format(accStatesArr))
 # The key is <state>.<symbol>, e.g. if I'm in state 0 and reading a 1, the key is 0.1
 # Each key holds an array containing what to write to tape, direction to move, and the next state
 m = 0
-linesDict={}
+linesDict = {}
 for line in txt:
     l = line.split()
     key = '{}.{}'.format(l[0],l[1])
@@ -46,7 +46,7 @@ for line in txt:
     # print('l: {}'.format(l))
     # print('Key: {}'.format(key))
     # linesList.insert(m,line.split())
-    m+=1
+    m += 1
 
 # print('LinesDict: {}'.format(linesDict))
 txt.close() # close text file after running
@@ -70,7 +70,7 @@ def readInputHelper(inputArr, linesDict, state, pos, accStates, accStatesLen):
         if (s == accState):
             print('Accept')
             return
-        b+=1
+        b += 1
 
     currChar = inputArr[pos]
     currKey = '{}.{}'.format(state,currChar)
@@ -90,7 +90,7 @@ def readInputHelper(inputArr, linesDict, state, pos, accStates, accStatesLen):
     else:
         if (pos == len(inputArr)-1):
             inputArr.append('_')
-        pos+=1
+        pos += 1
     prStr = ''.join(inputArr) # makes string representation of prStrArr
     print(prStr[0:pos]+'[q{}]'.format(state)+prStr[pos+1:]) # print the str and current state    
     readInputHelper(inputArr,linesDict,state,pos,accStates, accStatesLen) # recursive call
